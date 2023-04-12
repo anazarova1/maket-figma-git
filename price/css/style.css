@@ -31,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -87,24 +88,6 @@ body {
   align-self: flex-end;
 }
 
-.price-item-2 {
-  position: relative;
-  z-index: 100;
-}
-.price-item-2::after {
-  position: absolute;
-  content: "";
-  background: url("../img/price-item__dec.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  bottom: 0px;
-  left: 0px;
-  width: 200px;
-  height: 126px;
-  z-index: -1;
-}
-
 .price-item__title {
   color: #6c5ce7;
 }
@@ -159,6 +142,7 @@ body {
   padding: 25px 103px;
   border: 1px solid #6c5ce7;
   border-radius: 20px;
+  text-align: center;
 }
 
 .price-btn-2 {

@@ -47,6 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -99,21 +100,7 @@ body {
     }
 }
 
-.price-item-2{
-    position: relative;
-    z-index: 100;
-    &::after{
-        position: absolute;
-        content: '';
-        background: url('../img/price-item__dec.png');
-        @include BGconf;
-        bottom: 0px;
-        left:0px;
-        width: 200px;
-        height: 126px;
-        z-index: -1;
-    }
-}
+
 .price-item__title {
     color: $secColor;
 }
@@ -168,6 +155,7 @@ body {
     padding: 25px 103px;
     border: 1px solid $secColor;
     border-radius: 20px;
+    text-align: center;
 }
 .price-btn-2 {
     color: #fff;
