@@ -279,6 +279,7 @@ input:focus {
   padding: 16px 32px;
   background-color: #6c5ce7;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .footer-dec {
@@ -341,14 +342,23 @@ input:focus {
   gap: 25px;
   padding: 32px;
   border-radius: 16px;
-  transition: all 3s ease;
+  cursor: pointer;
+  transition: all 1s ease;
 }
 .price-item:hover {
   transform: scale(1.05);
   box-shadow: 2px 8px 6px 5px rgba(0, 0, 0, 0.35);
 }
-.price-item .price-item__btn {
-  align-self: flex-end;
+.price-item:hover .price-btn-2 {
+  transition: all 1.5s ease;
+  background-color: #fff;
+  color: #6c5ce7;
+}
+.price-item:hover .price-btn-1,
+.price-item:hover .price-btn-3 {
+  transition: all 1.5s ease;
+  background-color: #6c5ce7;
+  color: #fff;
 }
 
 .price-item__title {
@@ -411,10 +421,6 @@ input:focus {
 .price-btn-2 {
   color: #fff;
   background-color: #6c5ce7;
-}
-.price-btn-2:hover {
-  background-color: #fff;
-  color: #6c5ce7;
 }
 
 .price-btn-3:hover,

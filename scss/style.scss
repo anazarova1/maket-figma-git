@@ -287,6 +287,7 @@ input:focus {
     padding: 16px 32px;
     background-color: $secColor;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .footer-dec {
@@ -343,14 +344,25 @@ input:focus {
     gap: 25px;
     padding: 32px;
     border-radius: 16px;
-    transition: all 3s ease;
+    cursor: pointer;
+    transition: all 1s ease;
     &:hover {
         transform: scale(1.05);
         box-shadow: 2px 8px 6px 5px rgba(0, 0, 0, 0.35);
+        & .price-btn-2 {
+            transition: all 1.5s ease;
+            background-color: #fff;
+            color: $secColor;
+        }
+        & .price-btn-1,
+        .price-btn-3 {
+            transition: all 1.5s ease;
+            background-color: $secColor;
+            color: #fff;
+        }
     }
-    & .price-item__btn {
-        align-self: flex-end;
-    }
+    
+    
 }
 
 .price-item__title {
@@ -412,10 +424,6 @@ input:focus {
 .price-btn-2 {
     color: #fff;
     background-color: $secColor;
-    &:hover {
-        background-color: #fff;
-        color: $secColor;
-    }
 }
 
 .price-btn-3,
