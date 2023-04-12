@@ -167,7 +167,7 @@ input:focus {
             gap: 30px;
         }
     }
-
+}
     .content-block-2-twoimg-title {
         font-family: Inter;
         font-weight: 400;
@@ -176,25 +176,6 @@ input:focus {
     .content-block-2-3img {
         display: flex;
         gap: 30px;
-    }
-}
-
-$maincolor: #2d3436;
-$secColor: #6c5ce7;
-$form-bg: #c2c2c2;
-input,
-input:active,
-input:hover,
-input:focus {
-    $form-bg: #c2c2c2;
-    input,
-    input:active,
-    input:hover,
-    input:focus {
-        background-color: $form-bg;
-        border: none;
-        outline: 0;
-        outline-offset: 0;
     }
 
     .footer__inner {
@@ -441,4 +422,4 @@ input:focus {
             background-color: $secColor;
         }
     }
-}
+
