@@ -147,6 +147,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
 @import url('../css/media.css');
 @mixin BGconf{
+@import url("../css/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+@import url("../css/media.css");
+@mixin BGconf {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -163,6 +167,11 @@ $maincolor: #2d3436;
 $secColor: #6c5ce7;
 $form-bg:#C2C2C2;
 input, input:active, input:hover, input:focus {
+$form-bg: #c2c2c2;
+input,
+input:active,
+input:hover,
+input:focus {
     background-color: $form-bg;
     border: none;
     outline: 0;
@@ -177,6 +186,7 @@ a {
 
 body {
     font-family: "Inter", sans-serif;
+    color: $maincolor;
 }
 
 .container {
@@ -297,3 +307,135 @@ body {
     margin-top: 32px;
 }
 
+
+.price-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.price-text__title {
+    color: $maincolor;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 77px;
+}
+.price-text__subtitle {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #adadad;
+    & span {
+        color: $secColor;
+        position: relative;
+    }
+    & span::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 15px;
+        border-radius: 20px;
+        background-color: #fdcb6e;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+.price__list {
+    display: flex;
+    gap: 30px;
+}
+.price-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 32px;
+    border-radius: 16px;
+    transition: all 3s ease;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 2px 8px 6px 5px rgba(0, 0, 0, 0.35);
+    }
+    & .price-item__btn{
+        align-self: flex-end;
+    }
+}
+
+
+.price-item__title {
+    color: $secColor;
+}
+.price-item__subtitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+    & span {
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 3px;
+    }
+}
+
+.price-advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.price-advantages__item {
+    padding-left: 48px;
+    position: relative;
+    &::before {
+        position: absolute;
+        top: -3px;
+        left: 0px;
+        content: "";
+        background: url(../img/icon-checkli-dec.png);
+        background-position: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $form-bg;
+    }
+}
+.price-advantages__item-2 {
+    &::before {
+        background-color: #fdcb6e;
+    }
+}
+.price-advantages__item-3 {
+    &::before {
+        background-color: #55efc4;
+    }
+}
+
+.price-item__btn {
+    font-weight: 700;
+    color: $secColor;
+    padding: 25px 103px;
+    border: 1px solid $secColor;
+    border-radius: 20px;
+    text-align: center;
+}
+.price-btn-2 {
+    color: #fff;
+    background-color: $secColor;
+    &:hover{
+        background-color: #fff;
+        color: $secColor;
+    }
+}
+
+.price-btn-3, .price-btn-1{
+    &:hover{
+        color: #fff;
+        background-color: $secColor;
+}
+}
+}
+}

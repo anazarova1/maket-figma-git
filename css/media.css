@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: 990px) {
     .info-list {
         grid-gap: 15px 10px;
@@ -82,3 +83,33 @@
    
 
 }
+=======
+@media (min-width: 992px) and (max-width: 1160px) {
+    .price-item__btn {
+        padding: 25px 90px;
+    }
+}
+
+@media (max-width: 992px) {
+    .price__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .price-text{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .price-text__title{
+        font-size: 50px;
+    }
+    .price-text__subtitle{
+        font-size: 28px;
+    }
+    .price-item__btn {
+        padding: 10px 60px;
+    }
+}
+>>>>>>> pricing
