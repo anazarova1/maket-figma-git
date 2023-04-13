@@ -32,7 +32,7 @@ body {
     color: #2d3436;
 }
 
-.deliver{
+.deliver {
     padding: 80px 0;
 }
 .deliver__text-desc {
@@ -40,21 +40,23 @@ body {
     margin-bottom: 40px;
     max-width: 675px;
 }
-.deliver__list{
+.deliver__list {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.deliver__list-item{
+.deliver__list-item {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     gap: 15px;
     max-width: 270px;
-
-   
+    & .deliver-item__btn {
+        align-self: flex-start;
+    }
 }
-.deliver-item__img{
+.deliver-item__img {
     width: 70px;
     height: 70px;
 }
@@ -78,5 +80,9 @@ body {
     border: 1px solid $maincolor;
     border-radius: 16px;
     color: $secColor;
-    
+    transition: all 1s ease;
+    &:hover {
+        background-color: $secColor;
+        color: #fff;
+    }
 }

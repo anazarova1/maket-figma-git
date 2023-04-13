@@ -35,9 +35,13 @@ body {
 
 .deliver__list-item {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 15px;
   max-width: 270px;
+}
+.deliver__list-item .deliver-item__btn {
+  align-self: flex-start;
 }
 
 .deliver-item__img {
@@ -66,4 +70,9 @@ body {
   border: 1px solid #2d3436;
   border-radius: 16px;
   color: #6c5ce7;
+  transition: all 1s ease;
+}
+.deliver-item__btn:hover {
+  background-color: #6c5ce7;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
