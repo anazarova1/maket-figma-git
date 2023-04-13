@@ -32,404 +32,49 @@ body {
     color: #2d3436;
 }
 
-input,
-input:active,
-input:hover,
-input:focus {
-    background-color: #c2c2c2;
-    border: none;
-    outline: 0;
-    outline-offset: 0;
+.deliver{
+    padding: 80px 0;
 }
-
-.header {
-    box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.08);
-    box-shadow: 0px 2px 4px 0px rgba(38, 50, 56, 0.16);
+.deliver__text-desc {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    max-width: 675px;
 }
-.header__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .header__logo {
-        display: flex;
-        gap: 10px;
-        .header__logo-title {
-            font-family: Inter;
-            font-weight: 700;
-            font-size: 48px;
-        }
-    }
-    .nav {
-        display: flex;
-        margin-left: 86px;
-    }
-    .nav a {
-        text-decoration: none;
-        color: rgba(108, 92, 231, 1);
-        padding-left: 15px;
-        padding-right: 15px;
-        font-family: Inter;
-        font-weight: 400;
-        font-size: 18px;
-        align-items: center;
-    }
-    .btn {
-        padding: 8px 16px;
-        background-color: rgba(108, 92, 231, 1);
-        border-radius: 999px;
-        margin-left: 86px;
-        .button {
-            font-family: Inter;
-            font-weight: 700;
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
-    }
-}
-.content {
-    // background-image: url(../images/Rectangle@2x.png);
-    // position: absolute;
-    .content-h h1 {
-        font-family: Inter;
-        font-weight: 800;
-        font-size: 96px;
-        text-align: center;
-    }
-    span {
-        font-family: Inter;
-        font-weight: 800;
-        font-size: 96px;
-        text-align: center;
-        color: rgba(214, 48, 49, 1);
-    }
-    // span::after{
-    //     content:"";
-    //     background-image:url(../images/BG.png);
-    //     position: absolute;
-
-    // }
-    .content-h h2 {
-        font-family: Inter;
-        font-weight: 800;
-        font-size: 64px;
-        text-align: center;
-    }
-    .content__block {
-        display: flex;
-        margin-top: 64px;
-        gap: 30px;
-    }
-    .content__block-1 {
-        display: flex;
-        gap: 30px;
-        height: 96px;
-        width: 270px;
-        left: 135px;
-        top: 440px;
-        border-radius: nullpx;
-
-        flex-direction: column;
-        .content__block-1-title {
-            font-family: Inter;
-            font-weight: 400;
-            font-size: 18px;
-        }
-        .btn {
-            padding: 8px 16px;
-            background-color: rgba(108, 92, 231, 1);
-            border-radius: 999px;
-            text-align: center;
-
-            .button {
-                font-family: Inter;
-                font-weight: 700;
-                font-size: 32px;
-                color: white;
-                text-decoration: none;
-            }
-        }
-    }
-}
-.content-block-2 {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    .content-block-2-twoimg {
-        display: flex;
-        gap: 30px;
-        .content-block-2-twoimg-column {
-            margin-top: 85px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-        .content-block-2-twoimg-row {
-            display: flex;
-            gap: 30px;
-        }
-    }
-}
-.content-block-2-twoimg-title {
-    font-family: Inter;
-    font-weight: 400;
-    font-size: 18px;
-}
-.content-block-2-3img {
-    display: flex;
-    gap: 30px;
-}
-
-.footer__inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-title {
-    @include FooTitle;
-    margin-bottom: 8px;
-}
-.social-list {
-    display: flex;
-    align-items: center;
-    gap: 37px;
-}
-
-.footer-info__title {
-    margin-top: 40px;
-    margin-bottom: 16px;
-}
-.info-item__link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: $maincolor;
-    transition: all 0.3s ease;
-}
-.info-item__link:hover {
-    border-bottom: 1px solid $maincolor;
-}
-.info-link1,
-.info-link2,
-.info-link3 {
-    grid-area: FirstColumn;
-}
-.info-link4,
-.info-link5,
-.info-link6 {
-    grid-area: SecondColumn;
-}
-.info-link7,
-.info-link8 {
-    grid-area: ThirdColumn;
-}
-.info-list {
-    display: grid;
-    max-width: 500px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px 30px;
-    grid-template-areas:
-        "FirstColumn" "SecondColumn" "ThirdColumn"
-        "FirstColumn" "SecondColumn" "ThirdColumn"
-        "FirstColumn" "SecondColumn";
-}
-
-.footer-right__link {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-    color: $secColor;
-}
-.form-title {
-    margin-top: 48px;
-    margin-bottom: 16px;
-}
-.footer-form {
+.deliver__list{
     display: flex;
     gap: 20px;
-    justify-content: space-between;
-    max-width: 570px;
     flex-wrap: wrap;
-    & input {
-        padding: 8px 16px;
-    }
-    & input,
-    button {
-        border-radius: 16px;
-    }
 }
 
-.footer-form__message,
-.footer-form__message::placeholder {
-    color: $secColor;
+.deliver__list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 270px;
 }
-.footer-form__message {
-    width: 70%;
-    position: relative;
+.deliver-item__img{
+    width: 70px;
+    height: 70px;
 }
-.footer-form__message::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    background: url("../img/message-dec.png");
-    width: 40px;
-    height: 40px;
-    @include BGconf;
-}
-.footer-form__btn {
-    text-align: center;
+.deliver-item__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
-    color: #fff;
-    padding: 16px 32px;
-    background-color: $secColor;
-    text-transform: uppercase;
-    cursor: pointer;
+}
+.deliver-item__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
 }
 
-.footer-dec {
-    width: 100%;
-    margin-top: 32px;
-}
-.price {
-    padding: 75px 0;
-}
-.price-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.deliver-item__btn {
     text-align: center;
-    align-items: center;
-    margin-bottom: 40px;
-}
-.price-text__title {
-    color: $maincolor;
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 77px;
-}
-.price-text__subtitle {
-    margin-top: 35px;
+    padding: 8px 16px;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-    color: #adadad;
-    & span {
-        color: $secColor;
-        position: relative;
-    }
-    & span::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 15px;
-        border-radius: 20px;
-        background-color: #fdcb6e;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-    }
-}
-.price__list {
-    display: flex;
-    gap: 30px;
-}
-.price-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 25px;
-    padding: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    border: 1px solid $maincolor;
     border-radius: 16px;
-    cursor: pointer;
-    transition: all 1s ease;
-    &:hover {
-        transform: scale(1.05);
-        box-shadow: 2px 8px 6px 5px rgba(0, 0, 0, 0.35);
-        & .price-btn-2 {
-            transition: all 1.5s ease;
-            background-color: #fff;
-            color: $secColor;
-        }
-        & .price-btn-1,
-        .price-btn-3 {
-            transition: all 1.5s ease;
-            background-color: $secColor;
-            color: #fff;
-        }
-    }
-    
-    
-}
-
-.price-item__title {
     color: $secColor;
-}
-.price-item__subtitle {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    margin-bottom: 24px;
-    & span {
-        text-transform: uppercase;
-        font-size: 12px;
-        line-height: 15px;
-        letter-spacing: 3px;
-    }
-}
-
-.price-advantages {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.price-advantages__item {
-    padding-left: 48px;
-    position: relative;
-    &::before {
-        position: absolute;
-        top: -3px;
-        left: 0px;
-        content: "";
-        background: url(../img/icon-checkli-dec.png);
-        background-position: center;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background-color: $form-bg;
-    }
-}
-.price-advantages__item-2 {
-    &::before {
-        background-color: #fdcb6e;
-    }
-}
-.price-advantages__item-3 {
-    &::before {
-        background-color: #55efc4;
-    }
-}
-
-.price-item__btn {
-    font-weight: 700;
-    color: $secColor;
-    padding: 25px 103px;
-    border: 1px solid $secColor;
-    border-radius: 20px;
-    text-align: center;
-}
-.price-btn-2 {
-    color: #fff;
-    background-color: $secColor;
-}
-
-.price-btn-3,
-.price-btn-1 {
-    &:hover {
-        color: #fff;
-        background-color: $secColor;
-    }
+    
 }
