@@ -78,7 +78,7 @@ body {
   gap: 25px;
   padding: 32px;
   border-radius: 16px;
-  transition: all 3s ease;
+  transition: all 1s ease;
 }
 .price-item:hover {
   transform: scale(1.05);
