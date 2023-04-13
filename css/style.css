@@ -26,6 +26,10 @@ body {
   margin: 0 auto;
 }
 
+.footer {
+  padding-top: 50px;
+}
+
 .footer__inner {
   display: flex;
   justify-content: space-between;
@@ -75,19 +79,23 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .header__nav .header__logo {
   display: flex;
   gap: 10px;
 }
+
 .header__nav .header__logo .header__logo-title {
   font-family: Inter;
   font-weight: 700;
   font-size: 48px;
 }
+
 .header__nav .nav {
   display: flex;
   margin-left: 86px;
 }
+
 .header__nav .nav a {
   text-decoration: none;
   color: rgb(108, 92, 231);
@@ -98,12 +106,20 @@ body {
   font-size: 18px;
   align-items: center;
 }
+
 .header__nav .btn {
   padding: 8px 16px;
   background-color: rgb(108, 92, 231);
-  border-radius: 999px;
-  margin-left: 86px;
+  border-radius: 50px;
 }
+
+.header-img {
+  transition: all 1s ease;
+}
+.header-img:hover {
+  transform: scale(1.1);
+}
+
 .header__nav .btn .button {
   font-family: Inter;
   font-weight: 700;
@@ -118,6 +134,7 @@ body {
   font-size: 96px;
   text-align: center;
 }
+
 .content span {
   font-family: Inter;
   font-weight: 800;
@@ -125,17 +142,20 @@ body {
   text-align: center;
   color: rgb(214, 48, 49);
 }
+
 .content .content-h h2 {
   font-family: Inter;
   font-weight: 800;
   font-size: 64px;
   text-align: center;
 }
+
 .content .content__block {
   display: flex;
   margin-top: 64px;
   gap: 30px;
 }
+
 .content .content__block-1 {
   display: flex;
   gap: 30px;
@@ -146,17 +166,20 @@ body {
   border-radius: nullpx;
   flex-direction: column;
 }
+
 .content .content__block-1 .content__block-1-title {
   font-family: Inter;
   font-weight: 400;
   font-size: 18px;
 }
+
 .content .content__block-1 .btn {
   padding: 8px 16px;
   background-color: rgb(108, 92, 231);
   border-radius: 999px;
   text-align: center;
 }
+
 .content .content__block-1 .btn .button {
   font-family: Inter;
   font-weight: 700;
@@ -170,25 +193,30 @@ body {
   gap: 30px;
   flex-direction: column;
 }
+
 .content-block-2 .content-block-2-twoimg {
   display: flex;
   gap: 30px;
 }
+
 .content-block-2 .content-block-2-twoimg .content-block-2-twoimg-column {
   margin-top: 85px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .content-block-2 .content-block-2-twoimg .content-block-2-twoimg-row {
   display: flex;
   gap: 30px;
 }
+
 .content-block-2 .content-block-2-twoimg-title {
   font-family: Inter;
   font-weight: 400;
   font-size: 18px;
 }
+
 .content-block-2 .content-block-2-3img {
   display: flex;
   gap: 30px;
@@ -217,6 +245,7 @@ body {
   gap: 15px;
   max-width: 270px;
 }
+
 .deliver__list-item .deliver-item__btn {
   align-self: flex-start;
 }
@@ -249,6 +278,7 @@ body {
   color: #6c5ce7;
   transition: all 1s ease;
 }
+
 .deliver-item__btn:hover {
   background-color: #6c5ce7;
   color: #fff;
@@ -277,10 +307,12 @@ body {
   line-height: 48px;
   color: #adadad;
 }
+
 .price-text__subtitle span {
   color: #6c5ce7;
   position: relative;
 }
+
 .price-text__subtitle span::after {
   position: absolute;
   content: "";
@@ -307,10 +339,12 @@ body {
   border-radius: 16px;
   transition: all 1s ease;
 }
+
 .price-item:hover {
   transform: scale(1.05);
   box-shadow: 2px 8px 6px 5px rgba(0, 0, 0, 0.35);
 }
+
 .price-item .price-item__btn {
   align-self: flex-end;
 }
@@ -325,6 +359,7 @@ body {
   line-height: 56px;
   margin-bottom: 24px;
 }
+
 .price-item__subtitle span {
   text-transform: uppercase;
   font-size: 12px;
@@ -342,6 +377,7 @@ body {
   padding-left: 48px;
   position: relative;
 }
+
 .price-advantages__item::before {
   position: absolute;
   top: -3px;
@@ -376,6 +412,7 @@ body {
   color: #fff;
   background-color: #6c5ce7;
 }
+
 .price-btn-2:hover {
   background-color: #fff;
   color: #6c5ce7;
@@ -385,7 +422,7 @@ body {
 .price-btn-1:hover {
   color: #fff;
   background-color: #6c5ce7;
-} 
+}
 
 .info-item__link:hover {
   border-bottom: 1px solid #2d3436;
@@ -435,9 +472,11 @@ body {
   max-width: 570px;
   flex-wrap: wrap;
 }
+
 .footer-form input {
   padding: 8px 16px;
 }
+
 .footer-form input,
 .footer-form button {
   border-radius: 16px;
@@ -480,4 +519,4 @@ body {
 .footer-dec {
   width: 100%;
   margin-top: 32px;
-}
+}/*# sourceMappingURL=style.css.map */
