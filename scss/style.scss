@@ -1,6 +1,24 @@
 @import url("../css/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
 @import url("../css/media.css");
+
+@mixin BGconf{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@mixin FooTitle {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #adadad;
+  text-transform: uppercase;
+}
+
+$maincolor: #2d3436;
+$secColor: #6c5ce7;
+$form-bg:#C2C2C2;
+
 input,
 input:active,
 input:hover,
@@ -209,6 +227,9 @@ body {
 .deliver-item__btn:hover {
   background-color: #6c5ce7;
   color: #fff;
+}
+.price{
+  padding: 80px 0;
 }
 
 .price-text {
