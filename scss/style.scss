@@ -344,85 +344,103 @@ body {
   background-color: #6c5ce7;
 }
 
-.info-item__link:hover {
-  border-bottom: 1px solid #2d3436;
+.footer__inner{
+  display: flex;justify-content: space-between;
 }
 
+.footer-title {
+  @include FooTitle;
+  margin-bottom: 8px;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+.footer-info__title {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+.info-item__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $maincolor;
+  transition: all 0.3s ease;
+}
+.info-item__link:hover {
+  border-bottom: 1px solid $maincolor;
+}
 .info-link1,
 .info-link2,
 .info-link3 {
   grid-area: FirstColumn;
 }
-
 .info-link4,
 .info-link5,
 .info-link6 {
   grid-area: SecondColumn;
 }
-
 .info-link7,
 .info-link8 {
   grid-area: ThirdColumn;
 }
-
 .info-list {
   display: grid;
   max-width: 500px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px 30px;
-  grid-template-areas: "FirstColumn" "SecondColumn" "ThirdColumn" "FirstColumn" "SecondColumn" "ThirdColumn" "FirstColumn" "SecondColumn";
+  grid-template-areas:
+      "FirstColumn" "SecondColumn" "ThirdColumn"
+      "FirstColumn" "SecondColumn" "ThirdColumn"
+      "FirstColumn" "SecondColumn";
 }
+
 
 .footer-right__link {
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
-  color: #6c5ce7;
+  color: $secColor;
 }
-
-.form-title {
+.form-title{
   margin-top: 48px;
   margin-bottom: 16px;
 }
-
 .footer-form {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   max-width: 570px;
   flex-wrap: wrap;
-}
-.footer-form input {
-  padding: 8px 16px;
-}
-.footer-form input,
-.footer-form button {
-  border-radius: 16px;
-}
-
-.footer-form__message,
-.footer-form__message::placeholder {
-  color: #6c5ce7;
+  & input{
+     
+      padding: 8px 16px;
+  }
+  & input, button {
+      border-radius: 16px;
+  }
 }
 
-.footer-form__message {
+.footer-form__message, .footer-form__message::placeholder{
+  color: $secColor;
+
+}
+.footer-form__message{
   width: 70%;
   position: relative;
 }
-
-.footer-form__message::after {
+.footer-form__message::after{
   position: absolute;
-  content: "";
-  top: 0;
+  content: '';
+  top:0;
   right: 0;
-  background: url("../img/message-dec.png");
+  background: url('../img/message-dec.png');
   width: 40px;
   height: 40px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include BGconf;
 }
-
 .footer-form__btn {
   text-align: center;
   font-weight: 700;
@@ -430,11 +448,12 @@ body {
   line-height: 36px;
   color: #fff;
   padding: 16px 32px;
-  background-color: #6c5ce7;
+  background-color: $secColor;
   text-transform: uppercase;
 }
 
-.footer-dec {
+.footer-dec{
   width: 100%;
   margin-top: 32px;
 }
+
