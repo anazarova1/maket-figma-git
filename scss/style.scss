@@ -102,6 +102,20 @@ body {
   text-decoration: none;
 }
 
+.content{
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    width: 842px;
+    height: 657px;
+    top:0;
+    right: 0;
+    z-index: -2;
+    background: url('../images/main-dec.png');
+    @include BGconf;
+  }
+}
 .content__text {
   font-family: Inter;
   font-weight: 800;
@@ -110,6 +124,18 @@ body {
     font-size: 96px;
     & span{
       color: rgb(214, 48, 49);
+      position: relative;
+      &::after {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        content: '';
+        height: 50px;
+        width: 100%;
+        border-radius: 50px;
+        background-color: #55EFC4;
+        z-index: -1;
+      }
     }
   }
   h2 {
@@ -379,6 +405,9 @@ body {
   gap: 37px;
 }
 
+.footer{
+  padding-bottom: 80px;
+}
 .footer-info__title {
   margin-top: 40px;
   margin-bottom: 16px;
@@ -478,3 +507,18 @@ body {
   margin-top: 32px;
 }
 
+
+
+@media (max-width:480px) {
+  
+  .content__text{
+    h1 span{
+      &::after{
+        height: 25px;
+        width: 90%;
+      }
+    }
+  }
+  
+ 
+}
